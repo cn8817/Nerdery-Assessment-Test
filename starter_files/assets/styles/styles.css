@@ -704,3 +704,18 @@ body {
 .site-ft {
     border-top: 1px solid #acacac;
 }
+
+/* ---------------------------------------------------------------------
+ stock section
+------------------------------------------------------------------------ */
+
+.stock-bg{
+    background-image: url('../media/images/geo.jpg');
+}
+
+.stock-hd {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 1.3
+}
