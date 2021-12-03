@@ -711,7 +711,7 @@ body {
 
 .stock-bg{
     background-image: url('../media/images/geo.jpg');
-    height: 80vh;
+    height: 100vh;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -773,3 +773,39 @@ body {
     margin-left: 1rem;
     border-bottom: 2px solid lightgray;
 }
+
+.snack-img{
+    width: 200px;
+    height:150px;
+    padding-left: 70px;
+}
+
+.snack-img-container{
+    background-color: #ffffff;
+    width: 350px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+}
+#img-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
+}
+
+.snack-card{
+    margin-top:3%;
+}
+
+.snack-description{
+    color:#ffffff;
+    margin-top: 3%;
+}
+
+.snack-product{
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+

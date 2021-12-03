@@ -3,9 +3,13 @@
 //html template
 {/* <div id='img-container'>
         <div class='card>
-            <snack img/>
-            <snack product/>
-            <snack brand/>
+            <div img>
+                <snack img/>
+            </div>
+            <div description>
+                <snack product/>
+                <snack brand/>
+            </div>
         </div>
     </div> */}
 var request = new XMLHttpRequest()
@@ -19,19 +23,31 @@ request.onload = function () {
         data.forEach(snack => {
             const card = document.createElement('div')
             card.setAttribute('class', 'snack-card')
+
+            const imgContainer = document.createElement('div')
+            imgContainer.setAttribute('class', 'snack-img-container')
+
             const snackImg = document.createElement('img')
+            snackImg.setAttribute('class', 'snack-img')
             snackImg.src = snack.image
 
+            const snackDescription = document.createElement('div')
+            snackDescription.setAttribute('class', 'snack-description')
+
             const snackProduct = document.createElement('p')
+            snackProduct.setAttribute('class', 'snack-product')
             snackProduct.textContent = snack.product
 
             const snackBrand = document.createElement('p')
+            snackBrand.setAttribute('class', 'snack-brand')
             snackBrand.textContent = snack.brand
 
             app.appendChild(card)
-            card.appendChild(snackImg)
-            card.appendChild(snackProduct)
-            card.appendChild(snackBrand)
+            card.appendChild(imgContainer)
+            card.appendChild(snackDescription)
+            snackDescription.appendChild(snackProduct)
+            snackDescription.appendChild(snackBrand)
+            imgContainer.appendChild(snackImg)
         })
     } else{
         const errorMessage = document.createElement('h1')
