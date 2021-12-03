@@ -72,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="site-bd-section">
+                <div class="stock-section">
                     <div class="stock-bg">
                         <div class="stock-hd">
                             <h1>Currently In Stock</h1>
@@ -80,7 +80,44 @@
                         <div class="stock-content-p">
                             <p class="copy">Here are the snacks that are available in the Nerdery kitchen now.</p>
                         </div>
+                        <div class='img-container-1'>
+                            <script type="text/javascript">
+                                var apiUrl = 'http://localhost:3000/snacks';
+                                fetch(apiUrl).then(response => {
+                                  return response.json();
+                                }).then(data => {
+                                  console.log(data);
+                                }).catch(err => {
+                                    console.log('error')
+                                });
+                            </script>
+                        </div>
                     </div>
+                </div>
+
+                <div class="voting-container">
+                    <div class="voting-section">
+                        <div class="vote-spacing">
+                            <h1 class="snack-hd">Snack Voting</h1>
+                        </div>
+                        <div class="vote-spacing">
+                            <p class="snack-p">Vote on the snacks you want to see in this month's rotation</p>
+                        </div>
+                        <div class="vote-line line-spacing"></div>
+                        <div class="vote-spacing">
+                            <p>3 votes remaining</p>
+                        </div>
+                    </div>
+                    <div class="voting-items">
+                        <div class="available-items">
+                            <h2 class="available-hd">Available Items</h2> 
+                        </div>
+                        <div class="selection">
+                            <h2 class="selection-hd">Selection</h2>
+                            <div class="selection-line"></div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="site-bd-section site-bd-section_gray">

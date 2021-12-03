@@ -711,11 +711,65 @@ body {
 
 .stock-bg{
     background-image: url('../media/images/geo.jpg');
+    height: 80vh;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 25px;
 }
 
 .stock-hd {
     color: #ffffff;
     font-weight: normal;
-    font-size: 32px;
-    line-height: 1.3
+    font-size: 40px;
+    line-height: 1.3;
+    padding-bottom: 10px;
+}
+
+.snack-hd{
+    font-size: 40px;
+}
+.vote-line{
+    border-top: 2px solid #706e70;
+    width:20%;
+}
+
+.voting-section{
+    color: #706e70;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vote-spacing{
+    padding: 8px;
+}
+
+.line-spacing{
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.voting-items{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.available-hd{
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 25px;
+    background-color: #3d8b9f;
+    padding:0.5rem 20rem 0.5rem 0.5rem;
+}
+
+.selection-hd{
+    color: #706e70;
+    font-size: 25px;
+    padding:0.5rem 20rem 0.5rem 0;
+    margin-left: 1rem;
+    border-bottom: 2px solid lightgray;
 }
