@@ -711,7 +711,7 @@ body {
 
 .stock-bg{
     background-image: url('../media/images/geo.jpg');
-    height: 100vh;
+    height: 110vh;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -778,16 +778,18 @@ body {
     width: 200px;
     height:150px;
     padding-left: 70px;
+    object-fit: contain;
+
 }
 
 .snack-img-container{
     background-color: #ffffff;
     width: 350px;
-    height: 230px;
+    height: 250px;
     display: flex;
     align-items: center;
 }
-#img-container{
+.img-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -805,7 +807,11 @@ body {
 }
 
 .snack-product{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 2%;
+}
+
+.in-stock{
+    margin-top: -60%;
 }
 
