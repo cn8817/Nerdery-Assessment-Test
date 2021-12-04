@@ -140,6 +140,7 @@ request.onload = function () {
 
             const plusImg = document.createElement('div')
             plusImg.setAttribute('class', 'plus-img')
+            plusImg.textContent = '+'
 
             const voteContainer = document.createElement('div')
             voteContainer.setAttribute('class', 'vote-container')
@@ -153,14 +154,14 @@ request.onload = function () {
             inStock2.textContent = snack.inStock
 
             app.appendChild(snackVotingCard)
-            snackVotingCard.appendChild(plusImg)
             snackVotingCard.appendChild(voteContainer)
+            voteContainer.appendChild(plusImg)
             voteContainer.appendChild(snackProduct2)
             voteContainer.appendChild(inStock2)
         })
     } else{
         const errorMessage = document.createElement('h1')
-        errorMessage.textContent = 'The website is down at the moment. Check back later!'
+        errorMessage.textContent = 'The website is under maintenance. Check back later!'
         app.appendChild(errorMessage)
         }
 }
