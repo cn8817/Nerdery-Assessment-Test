@@ -5,6 +5,8 @@ I did not get to finish the project, but here is what I would do next:
 1. create an onlick event for the svg plus button that would activate a counter that would disable the voting after the counter reaches 3
 2. display the snack chosen along with how many votes it has when the onclick is fired 
 3. finish styling the voting section
+4. work on making the styles responsive for all screens
+5. work on mobile nav menu
 
 Things that are not part of the app example, but I would want to include:
 1. add a remove vote button in case someone changes their mind about the vote (would only show if you have selected snacks)
